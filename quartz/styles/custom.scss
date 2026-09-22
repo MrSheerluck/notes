@@ -1,0 +1,199 @@
+@use "./variables.scss" as *;
+
+// A quiet reading layer on top of the Abecedarium theme.
+:root {
+  --note-measure: 46rem;
+}
+
+body {
+  font-feature-settings:
+    "kern" 1,
+    "liga" 1;
+}
+
+.center article {
+  max-width: var(--note-measure);
+}
+
+.page-title {
+  letter-spacing: -0.035em;
+}
+
+article h1,
+article h2,
+article h3 {
+  text-wrap: balance;
+}
+
+article p,
+article li {
+  line-height: 1.72;
+}
+
+article a {
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.08em;
+}
+
+article blockquote {
+  border-inline-start-width: 2px;
+}
+
+// Compact research metadata that does not compete with the atomic claim.
+.callout[data-callout="source"] {
+  --color: var(--secondary);
+  --border: var(--secondary);
+  background: color-mix(in srgb, var(--secondary) 7%, transparent);
+  border-radius: 0.35rem;
+
+  .callout-title {
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .callout-content p {
+    margin-block: 0.35rem;
+    font-size: 0.92rem;
+  }
+}
+
+.landing-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-block: 2rem;
+
+  > a {
+    display: block;
+    padding: 1rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 0.55rem;
+    color: var(--dark);
+    text-decoration: none;
+    transition:
+      border-color 140ms ease,
+      transform 140ms ease;
+
+    strong,
+    span {
+      display: block;
+    }
+
+    span {
+      margin-top: 0.25rem;
+      color: var(--darkgray);
+      font-size: 0.88rem;
+    }
+
+    &:hover {
+      border-color: var(--secondary);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.garden-subscribe {
+  margin-block: 2.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 0.55rem;
+  background: color-mix(in srgb, var(--secondary) 5%, var(--light));
+
+  .garden-subscribe-kicker {
+    margin: 0 0 0.35rem;
+    color: var(--secondary);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+
+  > p:not(.garden-subscribe-kicker, .garden-subscribe-fallback) {
+    margin-block: 0.45rem 1rem;
+  }
+
+  .garden-subscribe-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid var(--secondary);
+    border-radius: 0.35rem;
+    background: var(--secondary);
+    color: var(--light);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+      filter 140ms ease,
+      transform 140ms ease;
+
+    &:hover {
+      filter: brightness(1.08);
+      transform: translateY(-1px);
+    }
+  }
+}
+
+footer {
+  font-size: 0.9rem;
+
+  p,
+  ul,
+  a {
+    font-size: inherit;
+  }
+
+  a[href*="mrsheerluck.substack.com"],
+  a[href*="github.com/sponsors"] {
+    color: var(--secondary);
+    font-weight: 600;
+    text-decoration-line: underline !important;
+    text-decoration-thickness: 0.12em;
+    text-underline-offset: 0.18em;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+// Quartz hides the TOC in its tablet layout to keep the narrow right rail
+// from becoming a three-column squeeze. Keep the rail readable by stacking
+// its panels and explicitly restoring the TOC at that breakpoint.
+@media (max-width: 800px) {
+  .landing-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1199px) {
+  .page > #quartz-body .sidebar.right {
+    flex-direction: column;
+  }
+
+  .page > #quartz-body .sidebar.right > * {
+    box-sizing: border-box;
+    width: 100%;
+    max-height: none;
+    flex: 0 0 auto;
+  }
+
+  .page > #quartz-body .sidebar.right > .toc {
+    display: flex;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-links > a,
+  .garden-subscribe-link {
+    transition: none;
+  }
+}
