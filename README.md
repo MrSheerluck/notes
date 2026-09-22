@@ -11,10 +11,13 @@ content/
 ├── notes/       notes, kept flat (one idea per note)
 ├── sources/     source records, kept flat
 ├── articles/    long-form writing, kept flat
+├── templates/   Obsidian templates for new notes, articles, and sources
 └── __support/   images, PDFs, audio, and video
 ```
 
 New attachments are directed to `__support` by the committed Obsidian settings. Pages are published only when their frontmatter contains `publish: true`.
+
+The `templates` folder is ignored by Quartz and contains `note.md`, `article.md`, and `source.md` starter files. In Obsidian, enable the Templates core plugin and set its template folder to `templates`.
 
 Use this source convention in notes:
 
