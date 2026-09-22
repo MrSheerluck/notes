@@ -3,7 +3,9 @@ title: "{{title}}"
 type: article
 description:
 tags: []
-publish: true
+publish: false
+previous:
+next:
 ---
 
 <!-- Introduce the question or argument this article develops. -->

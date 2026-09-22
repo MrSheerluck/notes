@@ -19,6 +19,8 @@ New attachments are directed to `__support` by the committed Obsidian settings. 
 
 The `templates` folder is ignored by Quartz and contains `note.md`, `article.md`, and `source.md` starter files. In Obsidian, enable the Templates core plugin and set its template folder to `templates`.
 
+For an article series, optionally add `previous` and/or `next` to the article frontmatter. Each value can be an Obsidian wikilink (for example, `next: "[[Part 2 — Borrowing]]"`) or a page slug. The navigation appears below the article only when a matching link is provided.
+
 Use this source convention in notes:
 
 ```markdown

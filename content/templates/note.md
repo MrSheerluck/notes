@@ -3,7 +3,7 @@ title: "{{title}}"
 type: note
 description:
 tags: []
-publish: true
+publish: false
 ---
 
 <!-- State one reusable claim in your own words. -->
