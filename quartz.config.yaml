@@ -4,7 +4,9 @@ configuration:
   pageTitleSuffix: " · Sheerluck"
   enableSPA: true
   enablePopovers: true
-  analytics: null
+  analytics:
+    provider: google
+    tagId: G-5NQJ7XK2QR
   locale: en-US
   baseUrl: notes.sheerluck.dev
   ignorePatterns:
