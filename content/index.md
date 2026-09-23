@@ -5,9 +5,34 @@ publish: true
 enableToc: false
 ---
 
+Hi, I’m Sahil. This is my digital garden for engineering, systems, software, and the other subjects I am learning in public.
+
+If you have any feedback or want to request any topic, please feel free to reach out.
+
+- X: [**@sheerluck_io**](https://x.com/sheerluck_io)
+- Bluesky: [**@mrsheerluck.bsky.social**](https://bsky.app/profile/mrsheerluck.bsky.social)
+- GitHub: [**MrSheerluck**](https://github.com/MrSheerluck)
+- YouTube: [**@sheerluck-dev**](https://www.youtube.com/@sheerluck-dev)
+
+You can also [subscribe on Substack](https://mrsheerluck.substack.com/subscribe), [sponsor my open-source work](https://github.com/sponsors/MrSheerluck), or visit my [main blog](https://blog.sheerluck.dev).
+
+## How this garden works
+
 Ideas grow better when they are connected.
 
-This is a digital garden for ideas that are useful enough to keep and clear enough to share. Notes capture one claim at a time, sources preserve where an idea came from, and articles assemble those pieces into longer arguments.
+This garden separates capture, evidence, and synthesis without turning the file tree into a taxonomy. The notes here are useful enough to keep, clear enough to share, and always open to being revised.
+
+### Notes
+
+Every file in `notes` aims to express one claim that can stand on its own. Topic structure emerges through wikilinks, tags, backlinks, and search rather than nested folders.
+
+### Sources
+
+A source note is a stable record for a book, paper, course, video, or other reference. Notes link back to it and use an **in** link for the exact chapter, heading, page, or timestamp.
+
+### Articles
+
+Articles are the synthesis layer. They connect several notes into a larger explanation while leaving the underlying notes reusable elsewhere.
 
 <div class="landing-links">
   <a href="/notes"><strong>Notes</strong><span>One idea, stated precisely.</span></a>
@@ -15,7 +40,7 @@ This is a digital garden for ideas that are useful enough to keep and clear enou
   <a href="/articles"><strong>Articles</strong><span>Longer writing assembled from the notes.</span></a>
 </div>
 
-Start with [[A slice borrows from its source]], read [[How this garden works]], or learn [[About|about me]].
+Start with [[A slice borrows from its source]] or browse the sections below.
 
 <section class="garden-subscribe" aria-labelledby="garden-subscribe-title">
   <p class="garden-subscribe-kicker">Garden dispatch</p>

@@ -9,6 +9,14 @@ configuration:
   baseUrl: notes.sheerluck.dev
   ignorePatterns:
     - private
+    - journals
+    - journals/**
+    - habits
+    - habits/**
+    - papers
+    - papers/**
+    - people
+    - people/**
     - templates
     - templates/**
     - .obsidian

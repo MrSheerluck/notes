@@ -1,7 +1,12 @@
 {
-  "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "__support",
-  "newLinkFormat": "shortest",
+	"showLineNumber": true,
+	"vimMode": true,
+	"readableLineLength": false,
+	"alwaysUpdateLinks": true,
+	"newFileLocation": "folder",
+	"newFileFolderPath": "notes",
+	"attachmentFolderPath": "__support",
+	"newLinkFormat": "shortest",
   "showUnsupportedFiles": true,
   "useMarkdownLinks": false
 }
