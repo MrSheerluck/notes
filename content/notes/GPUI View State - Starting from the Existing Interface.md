@@ -1,4 +1,12 @@
-Let's open our project from the first article and you can see that our application view looks like this:
+---
+title: GPUI View State - Starting from the Existing Interface
+type: note
+description:
+tags:
+  - gpui
+publish: true
+---
+Let's open our project from the [[Make a GPUI App Interactive - States and Events in GPUI]] and you can see that our application view looks like this:
 ```rust
 struct App;
 ```
