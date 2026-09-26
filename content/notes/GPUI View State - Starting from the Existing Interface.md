@@ -6,7 +6,7 @@ tags:
   - gpui
 publish: true
 ---
-Let's open our project from the [[Make a GPUI App Interactive - States and Events in GPUI]] and you can see that our application view looks like this:
+Let's open our project from the [[Building Your First Desktop UI with GPUI]] and you can see that our application view looks like this:
 ```rust
 struct App;
 ```
