@@ -118,7 +118,7 @@ WindowOptions {
 ```
 
 Run it and you see something like this:
-![[Screenshot 2026-08-29 at 07.23.27.png]]
+![[__support/gpui/first-window.png]]
 You can see that with the default option and now with specific size, the window size actually changes, you can try different sizes to check for yourself
 
 You need to note that, in GPUI, we need to represent dimensions using GPUI typed units like `px()`.
@@ -153,7 +153,7 @@ Now, run it and you'll see that the background is in black colour and text is in
 
 One thing you can notice by now is that, in GPUI, we create an element and just configure it by chaining methods.
 
-![[Screenshot 2026-08-29 at 07.49.28.png]]
+![[__support/gpui/full-window-background.png]]
 
 ## Nested Elements
 Of course, to build any complex layout, we need to know how to use or nest multiple elements, so lets' start learning about it.
@@ -247,7 +247,7 @@ fn sidebar() -> impl IntoElement {
 }
 ```
 Now, if you'll run it, you can see that the sidebar layout is there. 
-![[Screenshot 2026-08-29 at 09.03.38.png]]
+![[__support/gpui/sidebar-layout.png]]
 We just have the same fixed width for sidebar and it takes height as the total height of the window. Then we turn this sidebar into a flex container with `flex()` and `flex_col()` is used so that its children will be arranged vertically. Then we set the background and border and finally we set the padding for horizontal and vertical axis and gap as well.
 
 ## Adding the Workspace Selector
@@ -350,7 +350,7 @@ let app = gpui_platform::application().with_assets(AppAssets);
 ```
 
 now, if you'll run this, you should see:
-![[Screenshot 2026-08-29 at 09.27.14.png]]
+![[__support/gpui/workspace-selector.png]]
 
 
 ## Building the Search Box
@@ -394,7 +394,7 @@ Now, lets add the search box right below the workspace selector. lets add a `chi
 ```
 
 If you'll run this, you should see something like this:
-![[Screenshot 2026-08-29 at 09.29.37.png]]
+![[__support/gpui/sidebar-search-box.png]]
 
 ## Creating Reusable Navigation Items
 Now, lets learn another pattern, sometimes we want to create several elements may be buttons, options or something else that share the same structure.
@@ -462,7 +462,7 @@ Now, once this is done, we can add the navigation section to `sidebar()`:
 ```
 
 If you run it, you'll see something like this, its look really good right now. We just added another child element to sidebar and added multiple child element by using our `sidebar_item` helper function with different values. Please experiment with different values to understand how its working
-![[Screenshot 2026-08-29 at 09.38.56.png]]
+![[__support/gpui/sidebar-navigation.png]]
 
 ## Adding the Projects Section
 Lets add another section below the navigation. We will again write a helper function for this:
@@ -509,7 +509,7 @@ Now, lets add the projects section to the sidebar:
 ```
 
 If you'll run it, you should see something like this. We are again just follow the similar pattern that we followed for nav entries
-![[Screenshot 2026-08-29 at 09.45.06.png]]The small circles are actually themselves GPUI elements:
+![[__support/gpui/projects-section.png]]The small circles are actually themselves GPUI elements:
 ```rust
 div()
     .size(px(8.0))
@@ -559,7 +559,7 @@ We want the user info to remain at the bottom of the sidebar just like many othe
 )
 ```
 If you'll run it, you can see something like this:
-![[Screenshot 2026-08-29 at 09.48.26.png]]
+![[__support/gpui/sidebar-footer.png]]
 
 ## Building the Main Content Area
 Now, lets work on the right side as we finished working on the sidebar. Replace the `main_content()` with this:
@@ -608,7 +608,7 @@ Add this as the first child of `main_content()`:
 ```
 
 Once you run it, you should see this:
-![[Screenshot 2026-08-29 at 09.57.07.png]]
+![[__support/gpui/main-content-header.png]]
 There's one thing that I want to explain is that `ghost()` is coming from the GPUI component for its `Button` component, its just a styling thing, we are not creating this style manually.
 
 ## Creating the Content Area
@@ -654,7 +654,7 @@ inside the content container, add this:
 )
 ```
 Now, if you will run this, you can see that the heading for main content page is there
-![[Screenshot 2026-08-29 at 10.07.02.png]]
+![[__support/gpui/active-issues-heading.png]]
 
 ## Adding Tabs
 Lets add tabs to the main content. In these tabs, we will show options tabs like "All", "Assigned to me" and "Created by me". We will follow the same reusable helper function pattern:
@@ -687,7 +687,7 @@ Now add the tab container below the heading:
 ```
 
 You should see something like this:
-![[Screenshot 2026-08-29 at 10.12.26.png]]
+![[__support/gpui/issue-filter-tabs.png]]
 
 ## Creating Issue Group Headers
 Lets create a `group_header` helper function. These group headers will be used to set the title for a group and then we can have multiple issues per group
@@ -903,7 +903,7 @@ fn issue(
 ```
 
 Now, you should see something like this, you can actually use some custom icons if you want for those priority labels.
-![[Screenshot 2026-08-29 at 10.18.21.png]]
+![[__support/gpui/issue-list.png]]
 
 ## Adding the Product Issues
 Lets add one more product group to see how it looks with multiple products on the page:
@@ -936,7 +936,7 @@ Lets add one more product group to see how it looks with multiple products on th
 )
 ```
 If you'll run it, you'll see something like this:
-![[Screenshot 2026-08-29 at 10.20.54.png]]
+![[__support/gpui/product-issues-group.png]]
 
 ## Adding the Issue Count
 Lets add one last thing, this will be our small summary for the content area:
@@ -950,7 +950,7 @@ Lets add one last thing, this will be our small summary for the content area:
 )
 ```
 This is the final look that we will get
-![[Screenshot 2026-08-29 at 10.22.46.png]]
+![[__support/gpui/final-issue-tracker-ui.png]]
 
 ## Summarising What we just built
 We started with a single element `div().child("Hello, GPUI!")`, then we slowly added elements and worked with parent-child and sibling element structure, customised each element with chained methods for styling.

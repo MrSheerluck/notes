@@ -176,11 +176,11 @@ cargo run
 ```
 You should see the output `10`. The line `let number = 10;` creates a variable binding. Let me show you with the following image:
 
-![[Screenshot 2026-08-23 at 05.52.56.png]]
+![[__support/rust-series/variable-binding.png]]
 In Rust terminology, it is useful to think of `let` as creating a **binding** between a name and a value. Here, we are basically telling Rust that the name `number` refers to the value `10`. Don't worry about the types right now, we will learn about them shortly
 
 Now you might be thinking that it seems very very similar to languages like JavaScript and Python, then what is the difference that I was talking about. Let me show you by explaining what are the pieces of information associated with binding:
-![[Screenshot 2026-08-23 at 06.05.43.png]]
+![[__support/rust-series/binding-properties.png]]
 For now, you just need to note that the binding has a name called `number` and it refers to a value `10`, the value has a type, the binding is immutable by default and the binding exists within a particular scope. We will comeback to these properties later in this section and the next one as well.
 ## Variables are immutable by default
 Lets try and run this program:
@@ -273,7 +273,7 @@ fn main() {
 }
 ```
 I think you must have seen this kind of scope in other languages as well. The inner binding scope only exists inside the nested block and outer binding scope exists till the end of the program. So when you run the program, once our program gets out of the nested block, the `inner` binding is no longer available. That's why if you'll try to print `inner` binding value outside of that nested block, you'll get an error. Let me show you the scope of our above code with this visual:
-![[Screenshot 2026-08-23 at 06.43.06.png]]
+![[__support/rust-series/nested-variable-scopes.png]]
 We will later understand and connect the idea of scoping with ownership and lifetime, but for now, just understand that scope is a region in which a binding is available
 
 ### Where does the value actually live?
@@ -667,7 +667,7 @@ Second value: 20
 > Why do we start at `args[1]` instead of `args[0]`? Because the first argument, `args[0]`, is the program's executable name or path.
 
 
-![[Screenshot 2026-08-24 at 16.16.51.png]]
+![[__support/rust-series/command-line-arguments.png]]
 
 ### Parsing the numbers
 We are able to get the operation that user wants to perform and the values but the problem is the values are coming as string from command line, we need to convert them to numbers to perform any mathematical operations. To parse, we can do something like this:

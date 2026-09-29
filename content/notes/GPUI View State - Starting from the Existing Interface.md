@@ -38,3 +38,4 @@ cargo run
 Try clicking the navigation items, tabs, issue cards and status circles. Nothing will change, which is exactly what we are going to fix now.
 
 GPUI Kit’s asset example is also a simple stateless view. Its `Example` struct has no fields and its `render()` method always returns the same element tree [in](https://github.com/longbridge/gpui-kit/blob/v0.6.0/examples/app_assets/src/main.rs#L31-L57) [[GPUI]].
+
