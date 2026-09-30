@@ -11,6 +11,9 @@ Hi, in the previous article we built a Linear-like issue tracker interface using
 It looked like an application but it was still completely static.
 
 In this article, we will continue with that same project and make it interactive.
+
+![Youtube Video](https://youtu.be/OwG6Wz5hNSg)
+
 ![[__support/gpui/interactive-issue-tracker-demo.mov]]
 By the end, users will be able to:
 
