@@ -12,7 +12,7 @@ It looked like an application but it was still completely static.
 
 In this article, we will continue with that same project and make it interactive.
 
-![Youtube Video](https://youtu.be/OwG6Wz5hNSg)
+![Youtube Video](https://youtu.be/bs8bpAZ10SM)
 
 ![[__support/gpui/interactive-issue-tracker-demo.mov]]
 By the end, users will be able to:
