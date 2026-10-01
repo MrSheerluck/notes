@@ -5,6 +5,10 @@ description: We continue building our Linear-like desktop app with GPUI Kit by a
 tags:
   - gpui
 publish: true
+order: 2
+aliases:
+  - "articles/Making Our GPUI App Interactive with State and Events"
+previous: "[[Building Your First Desktop UI with GPUI]]"
 ---
 Hi, in the previous article we built a Linear-like issue tracker interface using GPUI Kit. We learned how to create layouts, split the UI into small helper functions and style everything using flexbox, spacing, colours and borders.
 

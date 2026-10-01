@@ -5,6 +5,9 @@ description: In this article, we are going to learn about Rust control flow by b
 tags:
   - rust
 publish: true
+order: 2
+aliases:
+  - "articles/Rust Control Flow in Practice - Build a Number Guessing Game"
 previous: "[[Build a Scientific Calculator in Rust - Understanding Variables and Types]]"
 next: "[[Understanding Rust Ownership by Building a Zero-Copy Log Line Parser]]"
 ---

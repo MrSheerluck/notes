@@ -10,7 +10,9 @@ Open the `content` directory as the vault. Its stable structure is:
 content/
 ├── notes/       notes, kept flat (one idea per note)
 ├── sources/     source records, kept flat
-├── articles/    long-form writing, kept flat
+├── articles/    long-form writing, grouped by topic or series
+│   ├── rust/    Rust lessons
+│   └── gpui/    GPUI lessons
 ├── templates/   Obsidian templates for new notes, articles, and sources
 └── __support/   images, PDFs, audio, and video
 ```
@@ -20,6 +22,17 @@ New attachments are directed to `__support` by the committed Obsidian settings. 
 The `templates` folder is ignored by Quartz and contains `note.md`, `article.md`, and `source.md` starter files. In Obsidian, enable the Templates core plugin and set its template folder to `templates`.
 
 For an article series, optionally add `previous` and/or `next` to the article frontmatter. Each value can be an Obsidian wikilink (for example, `next: "[[Part 2 — Borrowing]]"`) or a page slug. The navigation appears below the article only when a matching link is provided.
+
+Articles within a series use a numeric `order` property, starting at `1`. Folder listings and the website's Explorer sidebar show lower numbers first, followed by articles without a number. Ordering applies within each article folder. Other sections retain their existing sorting.
+
+```yaml
+order: 1
+published: 2026-10-01
+```
+
+`published` is optional and should contain the actual publication date in `YYYY-MM-DD` format. Quartz supports sorting and displaying this date by setting the created-modified-date plugin's `defaultDateType` to `published`; the current site uses `modified` as its default date, with `order` taking precedence for article series. Publication dates are not inferred from file moves or edits.
+
+Each series can have a published `index.md` for its title and introduction. When moving an already published article, add its former path under `aliases` to preserve its old URL through a redirect. Filename-only wikilinks continue to resolve when filenames are unique; update any links that explicitly include the old folder path.
 
 Use this source convention in notes:
 

@@ -22,3 +22,5 @@ For example, [[A slice borrows from its source]] points to both [[The Rust Progr
 ## Articles
 
 Articles are the synthesis layer. They connect several notes into a larger explanation while leaving the underlying notes reusable elsewhere.
+
+Articles are grouped into folders by topic or series. Within a series, lessons follow their reading order.

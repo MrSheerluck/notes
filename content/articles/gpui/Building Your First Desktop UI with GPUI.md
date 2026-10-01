@@ -6,6 +6,10 @@ tags:
   - gpui
   - rust
 publish: true
+order: 1
+aliases:
+  - "articles/Building Your First Desktop UI with GPUI"
+next: articles/gpui/making-our-gpui-app-interactive-with-state-and-events
 ---
 
 Hi, I'm starting this learning GPUI series completely out of curiosity to learn about GPUI and share whatever I learn with you. One thing that I can assure you is that we will follow the same pattern as the rest of my articles, we will build one interesting project per article and learn the concepts required to build that project. I'll try to post one article on GPUI every 2 weeks but can't promise on that, it might be 3 weeks per article as well.

@@ -5,6 +5,9 @@ description: In this article, we are going to learn about Rust variables and typ
 tags:
   - rust
 publish: true
+order: 1
+aliases:
+  - "articles/Build a Scientific Calculator in Rust - Understanding Variables and Types"
 next: "[[Rust Control Flow in Practice - Build a Number Guessing Game]]"
 ---
 

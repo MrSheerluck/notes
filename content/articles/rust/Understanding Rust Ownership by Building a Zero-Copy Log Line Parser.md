@@ -5,6 +5,9 @@ description: In this article, we are going to learn about Rust ownership, borrow
 tags:
   - rust
 publish: true
+order: 3
+aliases:
+  - "articles/Understanding Rust Ownership by Building a Zero-Copy Log Line Parser"
 previous: "[[Rust Control Flow in Practice - Build a Number Guessing Game]]"
 ---
 
