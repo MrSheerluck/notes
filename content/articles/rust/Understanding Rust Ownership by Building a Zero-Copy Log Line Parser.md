@@ -7,8 +7,9 @@ tags:
 publish: true
 order: 3
 aliases:
-  - "articles/Understanding Rust Ownership by Building a Zero-Copy Log Line Parser"
+  - articles/Understanding Rust Ownership by Building a Zero-Copy Log Line Parser
 previous: "[[Rust Control Flow in Practice - Build a Number Guessing Game]]"
+next: "[[Build an In-Memory Token-Bucket Rate Limiter in Rust - Structs and Methods]]"
 ---
 
 Hello there, Rust Ownership is probably the first Rust concept that feels actually different if you are coming from languages like JavaScript, Python, Java or C#
