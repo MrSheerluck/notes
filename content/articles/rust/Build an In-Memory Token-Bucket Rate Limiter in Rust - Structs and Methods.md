@@ -15,8 +15,11 @@ In our previous article, we learned about ownership and borrowing by building a 
 The project that we will be building is a Rust library with a TokenBucket struct that represents one bucket in memory. You choose its capacity and an interval that restores one whole token.
 
 But as usual, we will learn the concepts first and then focus on building the project
-![[Rust Rate Limiter Tutorial.png]]
 
+![Youtube Video](https://youtu.be/0lMNjF0qU7I)
+
+
+Get the source code from [here]()
 
 ![[A Rust Struct Groups Named Fields into One Type]]
 
