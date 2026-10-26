@@ -7,7 +7,7 @@ enableToc: false
 
 Hi, I’m Sahil. This is my digital garden for engineering, systems, software, and the other subjects I am learning in public.
 
-If you have any feedback or want to request any topic, please feel free to reach out.
+If you have any feedback or want to request a topic, please feel free to reach out.
 
 - X: [**@sheerluck_io**](https://x.com/sheerluck_io)
 - Bluesky: [**@mrsheerluck.bsky.social**](https://bsky.app/profile/mrsheerluck.bsky.social)
@@ -39,8 +39,6 @@ Articles are the synthesis layer. They connect several notes into a larger expla
   <a href="/sources"><strong>Sources</strong><span>Books, papers, courses, and references.</span></a>
   <a href="/articles"><strong>Articles</strong><span>Longer writing assembled from the notes.</span></a>
 </div>
-
-Start with [[A slice borrows from its source]] or browse the sections below.
 
 <section class="garden-subscribe" aria-labelledby="garden-subscribe-title">
   <p class="garden-subscribe-kicker">Garden dispatch</p>
