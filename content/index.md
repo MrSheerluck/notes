@@ -5,7 +5,7 @@ publish: true
 enableToc: false
 ---
 
-Hi, I’m Sahil. This is my digital garden for engineering, systems, software, and the other subjects I am learning in public.
+Hi, I’m Sheerluck. This is my digital garden for engineering, systems, software, and the other subjects I am learning in public.
 
 If you have any feedback or want to request a topic, please feel free to reach out.
 
@@ -14,7 +14,7 @@ If you have any feedback or want to request a topic, please feel free to reach o
 - GitHub: [**MrSheerluck**](https://github.com/MrSheerluck)
 - YouTube: [**@sheerluck-dev**](https://www.youtube.com/@sheerluck-dev)
 
-You can also [subscribe on Substack](https://mrsheerluck.substack.com/subscribe), [sponsor my open-source work](https://github.com/sponsors/MrSheerluck), or visit my [main blog](https://blog.sheerluck.dev).
+You can also [subscribe on Substack](https://mrsheerluck.substack.com/subscribe), [buy me a coffee](https://buymeacoffee.com/mrsheerlucx), [sponsor my open-source work](https://github.com/sponsors/MrSheerluck), or visit my [main blog](https://blog.sheerluck.dev).
 
 ## How this garden works
 
