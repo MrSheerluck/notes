@@ -1,4 +1,4 @@
-# Sheerluck's Digital Garden
+# Sahil's Digital Garden
 
 An Obsidian-compatible digital garden built with Quartz 5 and prepared for Cloudflare Pages at `notes.sheerluck.dev`.
 

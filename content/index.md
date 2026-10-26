@@ -1,11 +1,11 @@
 ---
-title: Sheerluck's Digital Garden
+title: Sahil's Digital Garden
 description: Notes, source trails, and longer essays on software and ideas.
 publish: true
 enableToc: false
 ---
 
-Hi, I’m Sheerluck. This is my digital garden for engineering, systems, software, and the other subjects I am learning in public.
+Hi, I’m Sahil. This is my digital garden for engineering, systems, software, and the other subjects I am learning in public.
 
 If you have any feedback or want to request a topic, please feel free to reach out.
 
