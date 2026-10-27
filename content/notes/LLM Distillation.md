@@ -12,7 +12,7 @@ This is a completely different technique to [[LLM Quantisation]]. We can still q
 
 ## How Distillation Works
 
-Distillation instead trains the student on the teacher's soft labels, which are the full probability distribution over possible next tokens [in](https://handbook.modular.com/model-preparation/llm-distillation/#:~:text=Distillation%20instead%20trains%20the%20student%20on%20the%20teacher%27s%20soft%20labels%2C%20which%20are%20the%20full%20probability%20distribution%20over%20possible%20next%20tokens) [[LLM Inference Handbook|source]]
+Distillation instead trains the student on the teacher's soft labels, which are the full probability distribution over possible next tokens [in](https://handbook.modular.com/model-preparation/llm-distillation/#:~:text=Distillation%20instead%20trains%20the%20student%20on%20the%20teacher%27s%20soft%20labels%2C%20which%20are%20the%20full%20probability%20distribution%20over%20possible%20next%20tokens) [[sources/LLM Inference Handbook|source]]
 
 For example, lets say for a given problem the bigger or teacher model assigns 40% probability to "car" and 30% probability for "vehicle", this actually helps the student or smaller model to not only learn about the answer but what are other possible answers and confidence of the teacher model per possible answer as well. This helps the student model to generalise better. 
 

@@ -18,6 +18,6 @@ To run LLMs at scale, inference servers provides these features:
 - Scaling: Spinning up or down replicas based on demand
 - Monitoring: Exposing metrics for performance and debugging
 
-> In the LLM space, people often use inference server or inference framework interchangeably [in](https://handbook.modular.com/llm-inference-basics/what-is-llm-inference/#what-is-an-inference-server:~:text=In%20the%20LLM%20space%2C%20people%20often%20use%20inference%20server%20or%20inference%20framework%20somewhat%20interchangeably) [[LLM Inference Handbook|source]]
+> In the LLM space, people often use inference server or inference framework interchangeably [in](https://handbook.modular.com/llm-inference-basics/what-is-llm-inference/#what-is-an-inference-server:~:text=In%20the%20LLM%20space%2C%20people%20often%20use%20inference%20server%20or%20inference%20framework%20somewhat%20interchangeably) [[sources/LLM Inference Handbook|source]]
 
 Some of the popular inference frameworks include vLLM, SGLang, MAX and TensorRT LLM
