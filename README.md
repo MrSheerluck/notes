@@ -10,7 +10,7 @@ Open the `content` directory as the vault. Its stable structure is:
 content/
 ├── notes/       notes, kept flat (one idea per note)
 ├── sources/     source records, kept flat
-├── reading/     finished articles and reading notes, kept flat
+├── media/       finished articles, videos, audio, and books, kept flat
 ├── articles/    long-form writing, grouped by topic or series
 │   ├── rust/    Rust lessons
 │   └── gpui/    GPUI lessons
@@ -20,9 +20,9 @@ content/
 
 New attachments are directed to `__support` by the committed Obsidian settings. Pages are published only when their frontmatter contains `publish: true`.
 
-The `templates` folder is ignored by Quartz and contains `note.md`, `article.md`, `source.md`, and `reading.md` starter files. In Obsidian, enable the Templates core plugin and set its template folder to `templates`.
+The `templates` folder is ignored by Quartz and contains `note.md`, `article.md`, `source.md`, and `media.md` starter files. In Obsidian, enable the Templates core plugin and set its template folder to `templates`.
 
-Finished articles are recorded in `reading/` as notes created from `templates/reading.md`. Each note keeps the article link, a one-sentence takeaway, what you learned, and your own reaction. The `/reading` folder page lists every published reading note. Use `sources/` for books, papers, courses, and references you are actively studying; use `reading/` for finished one-off articles and blog posts.
+Finished media is recorded in `media/` as notes created from `templates/media.md`. Each note keeps the source link, a one-sentence takeaway, what you learned, and your own reaction. The `/media` folder page lists every published media note. Use `sources/` for books, papers, courses, and references you are actively studying; use `media/` for finished one-off articles, videos, podcasts, and other media.
 
 For an article series, optionally add `previous` and/or `next` to the article frontmatter. Each value can be an Obsidian wikilink (for example, `next: "[[Part 2 — Borrowing]]"`) or a page slug. The navigation appears below the article only when a matching link is provided.
 

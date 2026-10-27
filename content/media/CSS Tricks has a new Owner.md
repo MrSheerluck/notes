@@ -1,6 +1,8 @@
 ---
 title: CSS Tricks has a new Owner
-type: reading
+type: media
+aliases:
+  - reading/CSS Tricks has a new Owner
 source_type: article
 description:
 authors: []

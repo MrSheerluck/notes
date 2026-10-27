@@ -8,8 +8,8 @@ import { QuartzTransformerPluginInstance } from "./quartz/plugins/types"
 
 componentRegistry.setOptionOverrides("@quartz-community/folder-page", { sort: sortFolderPages })
 
-const readingNotesOnlyShowUrl: QuartzTransformerPluginInstance = {
-  name: "ReadingNotesOnlyShowUrl",
+const mediaNotesOnlyShowUrl: QuartzTransformerPluginInstance = {
+  name: "MediaNotesOnlyShowUrl",
   markdownPlugins() {
     return [
       () => {
@@ -18,7 +18,7 @@ const readingNotesOnlyShowUrl: QuartzTransformerPluginInstance = {
             frontmatter?: { type?: unknown }
             noteProperties?: { properties?: Record<string, unknown> }
           }
-          if (data.frontmatter?.type !== "reading" || !data.noteProperties?.properties) {
+          if (data.frontmatter?.type !== "media" || !data.noteProperties?.properties) {
             return
           }
           const url = data.noteProperties.properties.url
@@ -50,7 +50,7 @@ const addSeriesNavigation = (layout: Awaited<ReturnType<typeof loadQuartzLayout>
 }
 
 const config = await loadQuartzConfig(undefined, addSeriesNavigation)
-config.plugins.transformers.push(readingNotesOnlyShowUrl)
+config.plugins.transformers.push(mediaNotesOnlyShowUrl)
 export default config
 const layout = await loadQuartzLayout()
 addSeriesNavigation(layout)

@@ -1,7 +1,7 @@
 filters:
   and:
-    - file.inFolder("reading")
-    - type == "reading"
+    - file.inFolder("media")
+    - type == "media"
 
 properties:
   file.name:
@@ -15,7 +15,7 @@ properties:
 
 views:
   - type: table
-    name: All Reading
+    name: All Media
     order:
       - file.name
       - source_type

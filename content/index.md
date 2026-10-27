@@ -30,9 +30,9 @@ Every file in `notes` aims to express one claim that can stand on its own. Topic
 
 A source note is a stable record for a book, paper, course, video, or other reference. Notes link back to it and use an **in** link for the exact chapter, heading, page, or timestamp.
 
-### Reading
+### Media
 
-A reading note is a short record of a finished article: the link, a one-sentence takeaway, what I learned, and my own reaction. These are first impressions, not polished essays.
+A media note is a short record of a finished article, video, podcast, or book: the link, a one-sentence takeaway, what I learned, and my own reaction. These are first impressions, not polished essays.
 
 ### Articles
 
@@ -41,7 +41,7 @@ Articles are the synthesis layer. They connect several notes into a larger expla
 <div class="landing-links">
   <a href="/notes"><strong>Notes</strong><span>One idea, stated precisely.</span></a>
   <a href="/sources"><strong>Sources</strong><span>Books, papers, courses, and references.</span></a>
-  <a href="/reading"><strong>Reading</strong><span>Articles I've finished, and what I took from them.</span></a>
+  <a href="/media"><strong>Media</strong><span>Articles, videos, audio, and books I've finished, and what I took from them.</span></a>
   <a href="/articles"><strong>Articles</strong><span>Longer writing assembled from the notes.</span></a>
 </div>
 

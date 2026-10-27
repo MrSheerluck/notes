@@ -1,6 +1,6 @@
 ---
 title: "{{title}}"
-type: reading
+type: media
 source_type: article
 description: # One-sentence takeaway
 authors: []
