@@ -6,43 +6,24 @@ filters:
 properties:
   file.name:
     displayName: Title
-  description:
-    displayName: Takeaway
   source_type:
     displayName: Source
   status:
     displayName: Status
-  finished:
-    displayName: Finished
-  rating:
-    displayName: Rating
-  via:
-    displayName: Found via
+  url:
+    displayName: URL
 
 views:
   - type: table
     name: All Reading
     order:
       - file.name
-      - description
       - source_type
       - status
-      - finished
-      - rating
-      - via
+      - url
     sort:
       - property: finished
         direction: DESC
     columnSize:
-      file.name: 260
-      description: 380
-
-  - type: cards
-    name: Cards
-    order:
-      - file.name
-      - description
-      - source_type
-      - finished
-      - rating
-    cardSize: 240
+      file.name: 300
+      url: 420

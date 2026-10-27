@@ -4,8 +4,30 @@ import { componentRegistry } from "./quartz/components/registry"
 import { QuartzComponentConstructor } from "./quartz/components/types"
 import { withArticleOrder } from "./quartz/components/OrderedArticleExplorer"
 import { sortFolderPages } from "./quartz/util/articleOrder"
+import { QuartzTransformerPluginInstance } from "./quartz/plugins/types"
 
 componentRegistry.setOptionOverrides("@quartz-community/folder-page", { sort: sortFolderPages })
+
+const readingNotesOnlyShowUrl: QuartzTransformerPluginInstance = {
+  name: "ReadingNotesOnlyShowUrl",
+  markdownPlugins() {
+    return [
+      () => {
+        return (_tree, file) => {
+          const data = file.data as {
+            frontmatter?: { type?: unknown }
+            noteProperties?: { properties?: Record<string, unknown> }
+          }
+          if (data.frontmatter?.type !== "reading" || !data.noteProperties?.properties) {
+            return
+          }
+          const url = data.noteProperties.properties.url
+          data.noteProperties.properties = url === undefined ? {} : { url }
+        }
+      },
+    ]
+  },
+}
 
 const addSeriesNavigation = (layout: Awaited<ReturnType<typeof loadQuartzLayout>>) => {
   const seriesNavigation = SeriesNavigation()
@@ -28,6 +50,7 @@ const addSeriesNavigation = (layout: Awaited<ReturnType<typeof loadQuartzLayout>
 }
 
 const config = await loadQuartzConfig(undefined, addSeriesNavigation)
+config.plugins.transformers.push(readingNotesOnlyShowUrl)
 export default config
 const layout = await loadQuartzLayout()
 addSeriesNavigation(layout)
