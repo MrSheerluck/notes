@@ -1,7 +1,7 @@
 ---
 title: Hono 101
 type: media
-source_type: article
+source_type: youtube
 description:
 authors:
   - Kyle
