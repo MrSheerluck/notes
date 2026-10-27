@@ -298,8 +298,12 @@ plugins:
         - type
         - source_type
         - authors
+        - publisher
         - url
+        - via
         - status
+        - finished
+        - rating
         - description
         - tags
         - aliases
