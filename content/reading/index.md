@@ -6,3 +6,7 @@ enableToc: false
 ---
 
 I keep one short note for every article I finish, whether it came from Hacker News, a blog, or somewhere else. Each note records the link, a one-sentence takeaway, the ideas worth keeping, and my own reaction.
+
+## All reading notes
+
+![[Reading Notes.base]]
